@@ -1,0 +1,40 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: kastiel
+ * Date: 4/24/17
+ * Time: 2:00 PM
+ */
+
+namespace backend\models\config;
+
+use common\models\config\Config;
+use Yii;
+
+/**
+ * Class GeneratorConfig
+ * @package backend\models\config
+ */
+class ArchiveConfig extends Config
+{
+    /**
+     * @var string path to files
+     */
+    public $filesPath;
+
+    /**
+     * @var string path to archives
+     */
+    public $path;
+
+    /**
+     *
+     */
+    public function init()
+    {
+        parent::init();
+
+        $this->filesPath = Yii::getAlias($this->filesPath);
+        $this->path      = Yii::getAlias($this->path);
+    }
+}
