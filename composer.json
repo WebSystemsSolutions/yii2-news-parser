@@ -1,6 +1,6 @@
 {
-    "name": "an2riy/fintech",
-    "keywords": ["fintech"],
+    "name": "an2riy/news.parser",
+    "keywords": ["news", "parser"],
     "type": "project",
     "license": "BSD-3-Clause",
     "minimum-stability": "stable",
